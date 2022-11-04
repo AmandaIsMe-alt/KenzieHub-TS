@@ -1,0 +1,78 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/react": "^2.3.6",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@hookform/resolvers": "^2.9.8",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^29.2.0",
+    "@types/node": "^18.11.4",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.26",
+    "axios": "^1.1.2",
+    "components": "^0.1.0",
+    "framer-motion": "^7.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.37.0",
+    "react-icon-library": "^0.1.45",
+    "react-icons": "^4.6.0",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.0.8",
+    "styled": "^1.0.0",
+    "styled-components": "^5.3.6",
+    "typescript": "^4.8.4",
+    "web-vitals": "^2.1.0",
+    "yup": "^0.32.11",
+    "yup-password": "^0.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "generate-icons": "svg-to-ts"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "svg-to-ts": {
+    "srcFiles": [
+      "./projects/dinosaur-icons/icons/*/.svg"
+    ],
+    "outputDirectory": "./projects/dinosaur-icons/icons",
+    "interfaceName": "DinosaurIcon",
+    "typeName": "dinosaurIcon",
+    "prefix": "dinosaurIcon",
+    "svgoConfig": {
+      "plugins": [
+        "cleanupAttrs"
+      ]
+    },
+    "fileName": "dinosaur-icon.model",
+    "additionalModelFile": "./projects/dinosaur-icons/src/lib",
+    "compileSources": true
+  }
+}

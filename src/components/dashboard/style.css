@@ -1,0 +1,10 @@
+#headerDashboard {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+main section {
+    border-top: 1px solid var(--grey3);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}

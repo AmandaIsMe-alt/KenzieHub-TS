@@ -1,0 +1,20 @@
+
+#headerCadastro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 32px auto;
+}
+
+@media (min-width: 768px) {
+  #headerCadastro {
+    max-width: 444px;
+  }
+}
+
+@media (max-width: 767px) {
+  #headerCadastro {
+    margin: 32px 16px;
+  }
+}
